@@ -1,0 +1,7 @@
+<p>You are logged in!</p>
+
+<p><b>Last deploy at:</b> <%= last_deploy %></p>
+
+<p>
+  <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
+</p>
