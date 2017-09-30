@@ -21,7 +21,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'devise'
 gem 'rest-client'
 gem 'sidekiq'
-gem 'unicorn'
+
+platforms :ruby do # linux
+  gem 'unicorn'
+end
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
